@@ -14,8 +14,8 @@ import Regex
 /// Check for valid multiserver addresses using the following regular expresion:
 ///
 /// ```
-/// let name = "[a-z][a-z\\-0-9]+"
-/// let data = "(?:["-9]|[<-}]|![!~:;])*"
+/// let name = #"[a-z][a-z\-0-9]+"#
+/// let data = #"(?:["-9]|[<-}]|![!~:;])*"#
 /// let prototype = "\(name)(?::\(data))*"
 /// let address = "\(prototype)(?:~\(prototype))*"
 /// let multi = "\(address)(?:;\(address))*"
