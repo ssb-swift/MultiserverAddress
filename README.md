@@ -59,7 +59,7 @@ fi
 
 Now, every time you commit new changes in the project, swift-format will automatically format them before committing them.
 
-[wiki]: https://github.com/swift-ssb/multiserver-address/wiki
+[wiki]: https://github.com/ssb-swift/multiserver-address/wiki
 [ref]: https://github.com/ssbc/multiserver-address
 [swift-format]: https://github.com/apple/swift-format
 [xcode-package-management-guide]: https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
