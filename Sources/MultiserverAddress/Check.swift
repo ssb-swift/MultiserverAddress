@@ -13,11 +13,13 @@ import Regex
 ///
 /// Check for valid multiserver addresses using the following regular expresion:
 ///
-/// - **name:** `"[a-z][a-z\\-0-9]+"`
-/// - **data:** `"(?:["-9]|[<-}]|![!~:;])*"`
-/// - **prototype:** `"\(name)(?::\(data))*"` <br> `"[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*"`
-/// - **address:** `"\(prototype)(?:~\(prototype))*"` <br> `"[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*(?:~[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*)*"`
-/// - **multi:** `"\(address)(?:;\(address))*"` <br> `"[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*(?:~[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*)*(?:;[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*(?:~[a-z][a-z\\-0-9]+(?::(?:["-9]|[<-}]|![!~:;])*)*)*)*"`
+/// ```
+/// let name = "[a-z][a-z\\-0-9]+"
+/// let data = "(?:["-9]|[<-}]|![!~:;])*"
+/// let prototype = "\(name)(?::\(data))*"
+/// let address = "\(prototype)(?:~\(prototype))*"
+/// let multi = "\(address)(?:;\(address))*"
+/// ```
 ///
 /// - Parameter data: Multiserver address to check.
 /// - Returns:        Is a valid multiserver address.
