@@ -1,8 +1,11 @@
 # Changelog
 
 ## Unreleased
-### Changed
-- Update GitHub's actions
+### Added
+- Better documentation.
+
+### Fixed
+- Fix and update GitHub's actions/workflows.
 
 ## 1.0.0 - 2021-06-09
 ### Added
