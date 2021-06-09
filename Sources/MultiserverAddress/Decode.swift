@@ -12,12 +12,12 @@
 /// Parse a multiserver address string.
 ///
 /// ### Format
-/// * *name:** `[a-z] [a-z0-9\-]+`            => Name may contain lower case, digits, and -. must start with lower case.
-/// * *escaped:** `![!:;~] `                  => Special characters !:;~ may be escaped with !.
-/// * *data:** `["-9] | [<-}] | escaped`      => Data field may contain any non-space character, but special characters must be escaped.
-/// * **prototype:** `name (:data)*`           => A protocol is a name and zero or more data elements.
-/// * **address:** `protocol (~ protocol )*`   => An address is 1 or more protocols.
-/// * **multi:** `address (; address )*`       => A multiaddress is 1 or more addresses.
+/// **name:** `[a-z] [a-z0-9\-]+` | Name may contain lower case, digits, and -. must start with lower case.
+/// **escaped:** `![!:;~] ` | Special characters `!:;~` may be escaped with !.
+/// **data:** `["-9] | [<-}] | escaped` | Data field may contain any non-space character, but special characters must be escaped.
+/// **prototype:** `name (:data)*` | A protocol is a name and zero or more data elements.
+/// **address:** `protocol (~ protocol )*` | An address is 1 or more protocols.
+/// **multi:** `address (; address )*` | A multiaddress is 1 or more addresses.
 ///
 /// ### Examples
 /// ```
