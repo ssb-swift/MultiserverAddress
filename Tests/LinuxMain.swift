@@ -7,10 +7,12 @@
 // See LICENSE for license information.
 // See AUTHORS for the list of the project authors.
 //
-import XCTest
 
 import MultiserverAddressTests
+import XCTest
 
 var tests = [XCTestCaseEntry]()
-tests += MultiserverAddressTests.allTests()
+tests += CheckTests.allTests()
+tests += DecodeTests.allTests()
+tests += EncodeTests.allTests()
 XCTMain(tests)
