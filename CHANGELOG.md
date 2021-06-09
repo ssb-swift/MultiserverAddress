@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+### Changed
+- Update GitHub's actions
 
 ## 1.0.0 - 2021-06-09
 ### Added

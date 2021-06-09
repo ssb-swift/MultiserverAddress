@@ -1,3 +1,5 @@
+name: Swift Format
+
 on: [pull_request]
 
 jobs:
