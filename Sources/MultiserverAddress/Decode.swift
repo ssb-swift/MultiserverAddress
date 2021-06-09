@@ -11,21 +11,16 @@
 ///
 /// Parse a multiserver address string.
 ///
-/// ### Format
+/// ## Format
 ///
-/// **name:** `[a-z] [a-z0-9\-]+` | Name may contain lower case, digits, and -. must start with lower case.
+/// - **name:** Name may contain lower case, digits, and `-`. must start with lower case. <br> `[a-z] [a-z0-9\-]+`
+/// - **escaped:** Special characters `!:;~` may be escaped with `!`. <br> `![!:;~]`
+/// - **data:** Data field may contain any non-space character, but special characters must be escaped. <br> `["-9] | [<-}] | escaped`
+/// - **prototype:** A protocol is a name and zero or more data elements. <br> `name (:data)*`
+/// - **address:** An address is 1 or more protocols. <br> `protocol (~ protocol )*`
+/// - **multi:** A multiaddress is 1 or more addresses. <br> `address (; address )*`
 ///
-/// **escaped:** `![!:;~] ` | Special characters `!:;~` may be escaped with !.
-///
-/// **data:** `["-9] | [<-}] | escaped` | Data field may contain any non-space character, but special characters must be escaped.
-///
-/// **prototype:** `name (:data)*` | A protocol is a name and zero or more data elements.
-///
-/// **address:** `protocol (~ protocol )*` | An address is 1 or more protocols.
-///
-/// **multi:** `address (; address )*` | A multiaddress is 1 or more addresses.
-///
-/// ### Examples
+/// ## Examples
 /// ```
 /// net:wx.larpa.net:8008~shs:DTNmX+4SjsgZ7xyDh5xxmNtFqa6pWi5Qtw7cE8aR9TQ=
 /// ws://wx.larpa.net~shs:DTNmX+4SjsgZ7xyDh5xxmNtFqa6pWi5Qtw7cE8aR9TQ=
