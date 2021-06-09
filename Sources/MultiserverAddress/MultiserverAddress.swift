@@ -1,3 +1,20 @@
-struct multiserver_address {
-    var text = "Hello, World!"
+//
+// This source file is part of the MultiserverAddress open source project.
+//
+// Copyright (c) 2021 project authors licensed under Mozilla Public License, v.2.0.
+// If a copy of the MPL was not distributed with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
+//
+// See LICENSE for license information.
+// See AUTHORS for the list of the project authors.
+//
+
+enum MultiserverAddressError: Error {
+  case invalidMultiserverAddressString
 }
+
+public struct Address {
+  public let name: Substring
+  public let data: [Substring]
+}
+
+public typealias MultiAddress = [[Address]]
