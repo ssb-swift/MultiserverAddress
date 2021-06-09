@@ -4,9 +4,15 @@ Define valid multiserver addresses. | _[multiserver-address][ref]_
 
 ### [Documentation][wiki]
 
-## Usage
+## Install
 
-TBD
+Add the following to Package.swift:
+
+```
+.package(url: "https://github.com/ssb-swift/multiserver-address", from: "1.0.0")
+```
+
+[Or add the package in Xcode.][xcode-package-management-guide]
 
 ## Contributing
 
@@ -56,4 +62,5 @@ Now, every time you commit new changes in the project, swift-format will automat
 [wiki]: https://github.com/swift-ssb/multiserver-address/wiki
 [ref]: https://github.com/ssbc/multiserver-address
 [swift-format]: https://github.com/apple/swift-format
+[xcode-package-management-guide]: https://developer.apple.com/documentation/swift_packages/adding_package_dependencies_to_your_app
 
