@@ -8,7 +8,12 @@ jobs:
 
     steps:
       - uses: actions/checkout@v1
-      # Additional steps to generate documentation in "Documentation" directory
+      - name: Generate Documentation
+        uses: SwiftDocOrg/swift-doc@master
+        with:
+          inputs: "Sources"
+          module-name: MultiserverAddress
+          output: "Documentation"
       - name: Upload Documentation to Wiki
         uses: SwiftDocOrg/github-wiki-publish-action@v1
         with:
