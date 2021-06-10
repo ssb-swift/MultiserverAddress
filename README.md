@@ -9,11 +9,7 @@ Define valid multiserver addresses. | _[multiserver-address][ref]_
 Add the following to the Package.swift dependencies:
 
 ```swift
-.package(url: "https://github.com/ssb-swift/MultiserverAddress", from: "1.0.0")
-
-...
-
-.product(name: "MultiserverAddress", package: "MultiserverAddress")
+.package(url: "https://github.com/ssb-swift/MultiserverAddress", from: "1.0.1")
 ```
 
 [Or add the package in Xcode.][xcode-package-management-guide]
