@@ -6,6 +6,7 @@
 
 ### Fixed
 - Fix and update GitHub's actions/workflows.
+- README.md installation errors and typos.
 
 ## 1.0.0 - 2021-06-09
 ### Added

@@ -6,10 +6,14 @@ Define valid multiserver addresses. | _[multiserver-address][ref]_
 
 ## Install
 
-Add the following to Package.swift:
+Add the following to the Package.swift dependencies:
 
-```
-.package(url: "https://github.com/ssb-swift/multiserver-address", from: "1.0.0")
+```swift
+.package(url: "https://github.com/ssb-swift/MultiserverAddress", from: "1.0.0")
+
+...
+
+.product(name: "MultiserverAddress", package: "MultiserverAddress")
 ```
 
 [Or add the package in Xcode.][xcode-package-management-guide]
@@ -22,7 +26,7 @@ This project uses [swift-format][swift-format] for automatic code formatting as 
 
 **Install swift-format**
 ```sh
-mkdir <repository-location>
+cd <repository-location>
 git clone -b swift-5.4-branch https://github.com/apple/swift-format.git
 cd swift-format
 swift build
